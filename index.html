@@ -1,28 +1,75 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Frontly — Sample landing pages</title>
+<title>Frontly | Your business, clearly seen.</title>
+<meta name="description" content="Simple landing pages for everyone in business. Clean, friendly, and live in days.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0B1530;color:#fff}
-.wrap{max-width:1000px;margin:0 auto;padding:56px 24px}
-h1{font-size:clamp(2rem,5vw,3.4rem);margin:0 0 8px}h1 span{color:#3D8BFF}
-p.lead{font-size:1.15rem;color:#c9d3ea;margin:0 0 36px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-a.card{display:block;background:#13204a;border:1px solid #23336a;border-radius:16px;padding:22px;color:#fff;text-decoration:none;transition:.15s}
-a.card:hover{border-color:#3D8BFF;transform:translateY(-2px)}
-.card b{display:block;font-size:1.15rem;margin-bottom:6px}.card small{color:#9fb0d8}
-.cta{margin-top:40px;padding:24px;border-radius:16px;background:#3D8BFF;font-size:1.1rem}
-footer{margin-top:40px;color:#7f8fb8;font-size:.9rem}
-</style></head><body><div class="wrap">
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(120deg,#0B1530 0%,#0f2257 60%,#173a8a 120%) #0B1530 no-repeat;background-size:100% 900px;background-color:#0B1530;color:#fff;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header{position:relative;z-index:2;padding:28px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+header img{height:48px;display:block}
+.btn{display:inline-block;background:#3D8BFF;color:#fff;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:999px;box-shadow:0 10px 30px rgba(61,139,255,.35);transition:.15s}
+.btn:hover{transform:translateY(-2px);background:#5a9cff}
+.btn.ghost{background:transparent;border:1.5px solid #3D8BFF;box-shadow:none;padding:10px 20px}
+.hero{position:relative;padding:40px 0 90px}
+.hero:before{content:"";position:absolute;inset:-200px -20% auto auto;width:900px;height:900px;background:radial-gradient(circle,rgba(61,139,255,.28),transparent 60%);z-index:0}
+.swoosh{position:absolute;right:-8%;top:40px;width:62%;height:520px;border-top:60px solid rgba(120,160,255,.10);border-right:60px solid rgba(120,160,255,.06);border-radius:0 100% 0 0;z-index:0}.swoosh.s2{top:200px;width:50%;height:420px;border-top-width:40px;border-right-width:40px}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;margin:0 0 22px;letter-spacing:-.02em}
+h1 span{color:#3D8BFF}
+.lead{font-size:1.25rem;line-height:1.55;color:#c9d3ea;margin:0 0 34px;max-width:470px}
+.devices{position:relative;height:600px;padding-top:40px;display:flex;justify-content:center;align-items:center}
+.laptop{position:absolute;left:0;top:20px;width:88%;background:#e8ecf5;border-radius:14px 14px 0 0;padding:10px 10px 0;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.laptop img{width:100%;display:block;border-radius:6px 6px 0 0}
+.laptop:after{content:"";position:absolute;left:-6%;right:-6%;bottom:-16px;height:16px;background:#cfd6e6;border-radius:0 0 14px 14px}
+.phone{width:270px;background:#0d1020;border:2px solid #2a3560;border-radius:40px;padding:10px;box-shadow:0 40px 80px rgba(0,0,0,.55);transform:rotate(6deg)}
+.phone img{width:100%;display:block;border-radius:31px}
+section.samples{background:#F4F6FB;color:#0B1530;padding:80px 0;border-radius:36px 36px 0 0}
+h2{font-family:Montserrat,sans-serif;font-weight:800;font-size:2.2rem;margin:0 0 8px}
+.sub{color:#4a5675;margin:0 0 36px;font-size:1.05rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+a.card{display:block;background:#fff;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 8px 24px rgba(11,21,48,.08);transition:.18s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(11,21,48,.15)}
+a.card img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block;border-bottom:1px solid #e6e9f2}
+.card div{padding:16px 18px 18px}.card b{display:block;font-size:1.05rem;margin-bottom:4px}.card small{color:#5b6788}
+.cta{background:#F4F6FB;padding:0 0 90px;color:#0B1530}
+.cta .box{background:#0B1530;color:#fff;border-radius:28px;padding:54px;text-align:center;position:relative;overflow:hidden}
+.cta .box:before{content:"";position:absolute;inset:auto -10% -85% -10%;height:300px;border-top:22px solid rgba(61,139,255,.5);border-radius:50%}
+.cta h2{position:relative}.cta p{position:relative;color:#c9d3ea;font-size:1.15rem;margin:0 0 28px}.cta .btn{position:relative}.btn.wa{background:#25D366;box-shadow:0 10px 30px rgba(37,211,102,.35);font-size:1.05rem;padding:16px 30px}.btn.wa:hover{background:#3be07a}.heroBtns{display:flex;flex-wrap:wrap;gap:14px}.hero .btn.wa{padding:14px 26px;font-size:1rem}
+footer{padding:46px 0 40px;text-align:center;color:#8d9cc4;font-size:.9rem}
+footer img{height:44px;margin-bottom:14px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.devices{height:auto;padding:30px 0}.phone{width:230px}.grid{grid-template-columns:1fr 1fr}header .btn{display:none}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.cta .box{padding:36px 22px}}
+</style></head><body>
+<header><div class="wrap"><img src="assets/frontly-logo.png" alt="Frontly"><a class="btn ghost" href="#samples">See samples</a></div></header>
+<section class="hero"><div class="swoosh"></div><div class="swoosh s2"></div><div class="wrap">
+<div>
 <h1>Your business, <span>clearly seen.</span></h1>
-<p class="lead">Simple landing pages for everyone in business. Clean, friendly, and live in days. Here are a few samples.</p>
-<div class="grid">
-<a class="card" href="via-veneto.html"><b>Via Veneto</b><small>Men's and boys' formalwear</small></a>
-<a class="card" href="youcheer-spa.html"><b>Youcheer Spa</b><small>Nail salon and spa</small></a>
-<a class="card" href="dominic-shoe-repair.html"><b>Dominic Shoe Repair</b><small>Shoe repair</small></a>
-<a class="card" href="ettys-wig-repair.html"><b>Etty's Wig Repair</b><small>Wig repair and styling</small></a>
-<a class="card" href="13th-ave-barber-bicycle-jewelry.html"><b>13th Avenue Barber, Bicycle &amp; Jewelry</b><small>Three services, one page</small></a>
-<a class="card" href="shem-tov-shoe-repair.html"><b>Shem Tov Shoe Repair</b><small>Shoe repair and accessories</small></a>
+<p class="lead">Simple landing pages for everyone in business.<br>Clean, friendly, and live in days.</p>
+<div class="heroBtns"><a class="btn" href="#samples">See sample pages →</a><a class="btn wa" href="https://wa.me/19174875016" target="_blank" rel="noopener">💬 Send us a message</a></div>
 </div>
-<div class="cta">Want one for your business? Send us a message on Instagram or WhatsApp and we'll make you a free sample.</div>
-<footer>These are sample pages. Photos and some details are placeholders. © Frontly</footer>
-</div></body></html>
+<div class="devices"><div class="phone"><img src="assets/hero-mobile.jpg" alt="Sample landing page on a phone"></div></div>
+</div></section>
+<section class="samples" id="samples"><div class="wrap">
+<h2>Sample pages</h2>
+<p class="sub">A few pages we've made. Tap one to see it live.</p>
+<div class="grid">
+<a class="card" href="via-veneto.html"><img src="assets/via-veneto.jpg" alt=""><div><b>Via Veneto</b><small>Men's and boys' formalwear</small></div></a>
+<a class="card" href="youcheer-spa.html"><img src="assets/youcheer-spa.jpg" alt=""><div><b>Youcheer Spa</b><small>Nail salon and spa</small></div></a>
+<a class="card" href="dominic-shoe-repair.html"><img src="assets/dominic-shoe-repair.jpg" alt=""><div><b>Dominic Shoe Repair</b><small>Shoe repair</small></div></a>
+<a class="card" href="ettys-wig-repair.html"><img src="assets/ettys-wig-repair.jpg" alt=""><div><b>Etty's Wig Repair</b><small>Wig repair and styling</small></div></a>
+<a class="card" href="13th-ave-barber-bicycle-jewelry.html"><img src="assets/13th-ave-barber-bicycle-jewelry.jpg" alt=""><div><b>13th Avenue Barber, Bicycle &amp; Jewelry</b><small>Three services, one page</small></div></a>
+<a class="card" href="shem-tov-shoe-repair.html"><img src="assets/shem-tov-shoe-repair.jpg" alt=""><div><b>Shem Tov Shoe Repair</b><small>Shoe repair and accessories</small></div></a>
+</div></div></section>
+<section class="cta"><div class="wrap"><div class="box">
+<h2>Want one for your business?</h2>
+<p>Send us a message for a free sample.</p>
+<a class="btn wa" href="https://wa.me/19174875016" target="_blank" rel="noopener">💬 Message us on WhatsApp</a>
+</div></div></section>
+<footer><img src="assets/frontly-logo.png" alt="Frontly"><br>Your business, clearly seen.<br><br>These are sample pages. Photos and some details are placeholders. © Frontly</footer>
+</body></html>
